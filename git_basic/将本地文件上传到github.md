@@ -1,3 +1,9 @@
+### 步骤
+1. git add .
+2. git commit -m "first"
+3. git remote add origin "" 
+4. gt push -u origin master
+### 注意事项
 https://blog.csdn.net/erhuobuer/article/details/89343380
 
 如果报错就
