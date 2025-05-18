@@ -11,10 +11,12 @@ https://blog.csdn.net/erhuobuer/article/details/89343380
 //取消http代理
 
 git config --global --unset http.proxy
+git config --global http.proxy 127.0.0.1:7897（7897是clash的端口号）
 
 //取消https代理
 
 git config --global --unset https.proxy
+git config --global https.proxy 127.0.0.1:7897（7897是clash的端口号）
 
 然后再git commit 或git clone
 
