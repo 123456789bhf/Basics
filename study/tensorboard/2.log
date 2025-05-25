@@ -1,0 +1,12 @@
+nohup: ignoring input
+2024-10-13 12:16:32.964117: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE SSE2 SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-10-13 12:16:33.255169: W tensorflow/core/framework/op_kernel.cc:1828] OP_REQUIRES failed at summary_kernels.cc:65 : FAILED_PRECONDITION: ./logs is not a directory
+Traceback (most recent call last):
+  File "loss_visiulization_v1.py", line 33, in <module>
+    model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=5, callbacks=[tf_callback])
+  File "C:\Users\zhangwanzhuang\miniconda3\envs\myconda\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\zhangwanzhuang\miniconda3\envs\myconda\lib\site-packages\tensorflow\python\framework\ops.py", line 6656, in raise_from_not_ok_status
+    raise core._status_to_exception(e) from None  # pylint: disable=protected-access
+tensorflow.python.framework.errors_impl.FailedPreconditionError: {{function_node __wrapped__CreateSummaryFileWriter_device_/job:localhost/replica:0/task:0/device:CPU:0}} ./logs is not a directory [Op:CreateSummaryFileWriter] name: 
