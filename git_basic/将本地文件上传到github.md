@@ -9,10 +9,9 @@
      - ls
    看是否存在
 1. git remote add origin "ssh的github链接"
-2. git pull origin master --allow-unrelated-histories（拉去当前的文件之后再进行推送）
-3. git add .
-4. git commit -m "first"
-5. git push -u origin master
+2. git add .
+3. git commit -m "first"
+4. git push -u origin master
 ### 注意事项
 https://blog.csdn.net/erhuobuer/article/details/89343380
 
